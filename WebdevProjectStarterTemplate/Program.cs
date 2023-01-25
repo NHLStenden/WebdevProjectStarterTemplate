@@ -5,6 +5,8 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+Program.Configuration = app.Configuration;
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -23,3 +25,9 @@ app.UseAuthorization();
 app.MapRazorPages();
 
 app.Run();
+
+
+partial class Program
+{
+    public static IConfiguration Configuration { get; set; } = null!;
+}

@@ -1,0 +1,9 @@
+@page "{categoryId:int}"
+@model WebdevProjectStarterTemplate.Pages.Categories.Delete
+
+<h1>Are you sure to delete Category @(Model.Category.Name)?</h1>
+
+<form method="POST">
+    <button asp-page-handler="Delete">Yes</button>
+    <button asp-page-handler="Cancel">Cancel</button>
+</form>
