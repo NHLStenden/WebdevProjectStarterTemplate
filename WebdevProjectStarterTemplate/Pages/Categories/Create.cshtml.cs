@@ -7,7 +7,7 @@ namespace WebdevProjectStarterTemplate.Pages.Categories;
 
 public class Create : PageModel
 {
-    [BindProperty] public Category? Category { get; set; } = null;
+    [BindProperty] public Category Category { get; set; } = null!;
     
     public void OnGet()
     {
