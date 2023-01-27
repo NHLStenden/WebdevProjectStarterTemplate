@@ -8,5 +8,7 @@ namespace WebdevProjectStarterTemplate.Models
 
         [Required, MinLength(2), MaxLength(128)]
         public string Name { get; set; } = null!;
+
+        public List<Product?> Products { get; set; } = new List<Product?>();
     }
 }
