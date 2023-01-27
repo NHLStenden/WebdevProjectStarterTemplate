@@ -7,7 +7,7 @@ namespace WebdevProjectStarterTemplate.Pages;
 
 public class DisplayCategories : PageModel
 {
-    public IEnumerable<Category> Categories { get; set; }
+    public IEnumerable<Category> Categories { get; set; } = null!;
     
     public void OnGet()
     {
