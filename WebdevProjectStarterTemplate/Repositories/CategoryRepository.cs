@@ -29,6 +29,8 @@ namespace WebdevProjectStarterTemplate.Repositories
             var categories = connection.Query<Category>(sql);
             return categories;
         }
+
+        
         
         public IEnumerable<Category> GetCategoriesWithProducts()
         {
@@ -76,7 +78,6 @@ namespace WebdevProjectStarterTemplate.Repositories
             
             return result;
         }
-        
 
         public Category Add(Category? category)
         {

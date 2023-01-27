@@ -9,7 +9,7 @@ public class Update : PageModel
 {
     public Category Category { get; set; } = null!;
     
-    public void OnGet([FromQuery]int categoryId)
+    public void OnGet(int categoryId)
     {
         Category = new CategoryRepository().Get(categoryId);
     }
