@@ -35,7 +35,7 @@ namespace WebdevProjectStarterTemplate.Repositories
         public IEnumerable<Category> GetCategoriesWithProducts()
         {
             //het vullen van een lijst met categorieën is lastig met dapper (parent (Cagegory) with children (Products from Category))
-            //ik heb de stackoverflow idee wat aangepast om het ook met LEFT JOIN te laten werken
+            //ik heb idee van stackoverflow wat aangepast om het ook met LEFT JOIN te laten werken
 
             //https://stackoverflow.com/questions/6379155/multi-mapper-to-create-object-hierarchy#6380756
             //https://stackoverflow.com/questions/9350467/how-do-i-write-one-to-many-query-in-dapper-net
